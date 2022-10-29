@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskday5</title>
+</head>
+<body>
+    
+
+
+<script>
+// let a =[23,23,45,45,67,6,7,67]
+// let newone = [...new Set(a)]
+
+// console.log(newone)
+// const findduplicate =
+
+
+// question  g of task
+
+//  function duplicate(a1){
+// // const a1 = [20,34,56,78,87,87,78]
+// let b =[]
+// for(let i=0;i<a1.length;i++){
+//     if(b.indexOf(a1[i])=== -1){
+//         b.push(a1[i])
+//     }
+// }
+// return b;
+// }
+
+
+// console.log(duplicate([20,34,56,78,87,87,78]))
+// console.log(duplicate([20,34,56,78,87,87,78]))
+// console.log(duplicate([20,344,344,566,566,78,87,87,78]))
+
+
+//----------------------NO :1 ---task G-------------------------------//
+
+const findduplicate =function (a1){
+// const a1 = [20,34,56,78,87,87,78]
+let b =[]
+for(tejas in a1){
+    if(b.indexOf(a1[tejas])=== -1){
+        b.push(a1[tejas])
+    }
+}
+return b;
+}
+
+
+console.log(findduplicate([20,34,56,78,87,87,78]))
+console.log(findduplicate([20,34,56,78,87,87,78]))
+console.log(findduplicate([20,344,344,566,566,78,87,87,78]))
+
+//-------------------NO :2------sum all, task c-----------------//
+let sumall= function (sum){
+
+let total = 0;
+for(guru of sum)
+   total +=guru
+return total 
+} 
+console.log(sumall([20,34,56,788,87,87,78]))
+console.log(sumall([20,34,56,785,857,875,785 ]))
+console.log(sumall([20,34,56,778,87,877,778]))
+
+//------------------NO : 3-------task h : Rotate an array by k times ------------------//
+
+let rotate =function (arr,k){
+for(let i=0;i<k;i++){
+let temp=arr[0];
+for(let j =0;j<arr.length;j++){
+arr[j]=arr[j+1];
+}
+arr[arr.length - 1 ] = temp
+ 
+}
+return arr;
+}
+// let arr =
+// k =2
+// rotate()
+ console.log(rotate([1,2,3,4,5],2))
+ console.log(rotate([1,2,3,4,5],3))
+ console.log(rotate([1,2,3,4,5],4))
+ console.log(rotate([1,2,3,4,5],5))
+
+//--------------find the odd number-------------NO :4 --------------//
+
+
+let array1 = function(oddn){
+// let array1 = [12,33,56,57,78,77,98]
+for(i=0;i<oddn.length;i++){
+    if(oddn[i]%2!=0){
+        console.log("these are the odd numbers  " + oddn[i])
+    }
+
+}
+}
+
+console.log(array1([12,33,56,57,78,77,98]))
+
+//----------------Convert all the strings to title caps in a string array---------task B-----------------------------------//
+
+
+
+const capitalised =function (guru1){
+
+let str = guru1.split(" ");
+for(let i=0;i<str.length;i++){
+str[i] = str[i][0].toUpperCase() + str[i].substring(1);
+
+}
+return str.join(" ") 
+
+
+}
+
+console.log(capitalised("guru prasad sharma"))
+
+var word = ["guru", "shreehari", "tejas"]
+var sure= word.filter((element)=> element.length < 6 ) 
+
+console.log(sure)
+
+
+
+
+
+//---------task G-----------Return all the prime numbers in an array-------------//
+
+
+
+const findprime =function(array){
+let sortarray=[];
+array.forEach((num)=>{
+    let factor =0;
+    for(let i=0;i<=num;i++){
+        if((num%i) ===0){
+factor++ 
+        }
+    }
+    if(factor===2){
+        sortarray.push(num)
+    }
+})
+console.log(sortarray);
+}
+findprime([2,6,9,89,353,1,7,5])
+
+//---------------------------------median numbers-------//
+
+// let arr1=[2,3,57,6];
+// let arr2=[34,56,78];
+
+const median =function median(arr1,arr2){
+var arr3=arr1.concat(arr2)
+console.log(arr3)
+
+
+let arrsort=arr3.sort((a,b)=>a-b)
+console.log(arrsort)
+
+
+var length = arrsort.length
+console.log(length)
+
+if(length%2 !=0){
+    var result = arrsort[Math.floor(length/2)]
+    console.log(result)
+}
+
+else{
+    var result= Math.floor((arrsort[length/2]+arrsort[length/2 -1])/2)
+    console.log(result)
+}
+}
+median([2,3,57,6],[34,56,78])
+
+
+
+//-------------------------polidroms---------------//
+// let pali = ['guru prasad']
+
+
+let palindrom = function(pali){
+
+var string = pali.split("");
+ 
+var stringarray = string.reverse();
+
+var revstring = stringarray.join("");
+
+if(pali===revstring){ 
+ 
+console.log(`${pali}:is palindrome`)
+}
+else{
+  console.log(`${pali}: is not a palindrom`)  
+}
+
+return revstring
+}
+
+
+console.log(palindrom("dad"))
+console.log(palindrom("guru prasad"))
+
+
+
+
+
+//-------------------arrow functions----------//
+// palondrome---------//
+ const nagamani = (pali)=> {
+
+var string = pali.split("");
+ 
+var stringarray = string.reverse();
+
+var revstring = stringarray.join("");
+
+if(pali===revstring){
+ 
+console.log(`${pali}:is palindrome`)
+}
+else{
+  console.log(`${pali}: is not a palindrom`)  
+}   
+
+// return revstring
+console.log(pali)
+} 
+nagamani("hari prasad")
+nagamani("ruur")
+
+
+
+//--------arrow----median --------
+
+const median1 = (arr1,arr2)=>{
+var arr3=arr1.concat(arr2)
+// console.log(arr3)
+
+
+let arrsort=arr3.sort((a,b)=>a-b)
+// console.log(arrsort)
+
+
+var length = arrsort.length
+// console.log(length)
+
+if(length%2 !=0){
+    var result = arrsort[Math.floor(length/2)] 
+    console.log(result)
+}
+
+else{
+    var result= Math.floor((arrsort[length/2]+arrsort[length/2 -1])/2)
+    console.log(result)
+}
+}
+median1([2,3,57,6],[34,56,78])
+
+
+
+
+//-----arrow----findprime n -----------//
+
+
+const findprime1 =(array)=>{
+let sortarray=[];
+array.forEach((num)=>{
+    let factor =0;
+    for(let i=0;i<=num;i++){
+        if((num%i) ===0){
+factor++ 
+        }
+    }
+    if(factor===2){
+        sortarray.push(num)
+    }
+})
+console.log(sortarray);
+}
+findprime([2,6,9,89,353,1,7,5])
+
+
+
+
+
+
+//-------arrow fn capitalize-------//
+
+const capitalised1 = (guru1)=>{
+
+let str = guru1.split(" ");
+for(let i=0;i<str.length;i++){
+str[i] = str[i][0].toUpperCase() + str[i].substring(1);
+
+}
+return str.join(" ") 
+
+
+}
+
+console.log(capitalised1("guru prasad sharma"))
+
+
+
+
+
+
+//-----------arrow odd n ----//
+
+
+let array11 = (oddn)=>{
+// let array1 = [12,33,56,57,78,77,98]
+for(i=0;i<oddn.length;i++){
+    if(oddn[i]%2!=0){
+        console.log("these are the odd numbers  " + oddn[i])
+    }
+    else{
+        // console.log("even number " + oddn[i])
+    }
+}
+}
+
+console.log(array11([12,33,56,57,78,77,98]))
+
+//--------arrow---rotate k--------//  
+
+let rotate1 = (arr,k)=>{
+for(let i=0;i<k;i++){
+let temp=arr[0];
+for(let j =0;j<arr.length;j++){
+arr[j]=arr[j+1];
+}
+arr[arr.length - 1 ] = temp
+
+}
+return arr;
+}
+// let arr =
+// k =2
+// rotate()
+ console.log(rotate1([1,2,3,4,5],2))
+ console.log(rotate1([1,2,3,4,5],3))
+ console.log(rotate1([1,2,3,4,5],4))
+ console.log(rotate1([1,2,3,4,5],5))
+
+
+//-------------arrow-----sum all--------//
+
+let sumall1= (sum)=>{
+
+let total = 0;
+for(guru of sum)
+   total +=guru
+return total 
+} 
+console.log(sumall1([20,34,56,788,87,87,78]))
+console.log(sumall1([20,34,56,785,857,875,785 ]))
+console.log(sumall1([20,34,56,778,87,877,778]))
+
+
+
+
+
+const findduplicate1 = (a1)=>{
+// const a1 = [20,34,56,78,87,87,78]
+let b =[]
+for(tejas in a1){
+    if(b.indexOf(a1[tejas])=== -1){
+        b.push(a1[tejas])
+    }
+}
+return b;
+}
+
+console.log(findduplicate1([20,34,56,78,87,87,78]))
+console.log(findduplicate1([20,34,56,78,87,87,78]))
+console.log(findduplicate1([10,344,344,566,566,78,67,87,87,78]))
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+//----------- find prime----------//
+// (function (array){
+// let sortarray=[];
+// array.forEach((num)=>{
+//     let factor =0;
+//     for(let i=0;i<=num;i++){
+//         if((num%i) ===0){
+// factor++ 
+//         }
+//     }
+//     if(factor===2){
+//         sortarray.push(num)
+//     }
+// })
+// console.log(sortarray);
+// })
+// ([2,6,9,89,353,1,7,5])
+
+
+//----------------palindrome IIfe-------//
+// (function (pali){
+
+// var string = pali.split("");
+ 
+// var stringarray = string.reverse();
+
+// var revstring = stringarray.join("");
+
+// if(pali===revstring){ 
+ 
+// console.log(`${pali}:is palindrome`)
+// }
+// else{
+//   console.log(`${pali}: is not a palindrom`)  
+// }
+
+// return revstring
+// })("dad")
+// ("guru prasad")
+
+//-----------capitalize first letter-------------//
+
+// (function (guru1){
+
+// let str = guru1.split(" ");
+// for(let i=0;i<str.length;i++){
+// str[i] = str[i][0].toUpperCase() + str[i].substring(1);
+
+// }
+// return str.join(" ") 
+
+
+// })("guru prasad sharma")
+
+
+//---------------odd and even---------------------//
+
+// (function (oddn){
+// // let array1 = [12,33,56,57,78,77,98]
+// for(i=0;i<oddn.length;i++){
+//     if(oddn[i]%2!=0){
+//         console.log("these are the odd numbers  " + oddn[i])
+//     }
+//     else{
+//         // console.log("even number " + oddn[i])
+//     }
+// }
+// })([12,33,56,57,78,77,98])
+
+//-----------rotate k times----------------------//
+
+// (function (arr,k){
+// for(let i=0;i<k;i++){
+// let temp=arr[0];
+// for(let j =0;j<arr.length;j++){
+// arr[j]=arr[j+1];
+// }
+// arr[arr.length - 1 ] = temp
+
+// }
+// return arr;
+// })([1,2,3,4,5],2)
+
+//------------sum all -------------------//
+
+// (function (sum){
+
+// let total = 0;
+// for(guru of sum)
+//    total +=guru
+// return total 
+// } )([20,34,56,788,87,87,78])
+// ([20,34,56,785,857,875,785 ])
+// ([20,34,56,778,87,877,778])
+
+
+//-------------find duplicate -----------------------//
+
+// (function (a1){
+// // const a1 = [20,34,56,78,87,87,78]
+// let b =[]
+// for(tejas in a1){
+//     if(b.indexOf(a1[tejas])=== -1){
+//         b.push(a1[tejas])
+//     }
+// }
+// return b;
+// })([20,34,56,78,87,87,78])
+// console.log(findduplicate1([20,34,56,78,87,87,78]))
+// console.log(findduplicate1([10,344,344,566,566,78,67,87,87,78]))
+
+
+//--------------median  ---------------------------------//
+
+// ( function (arr1,arr2){
+// var arr3=arr1.concat(arr2)
+// // console.log(arr3)
+
+
+// let arrsort=arr3.sort((a,b)=>a-b)
+// // console.log(arrsort)
+
+
+// var length = arrsort.length
+// // console.log(length)
+
+// if(length%2 !=0){
+//     var result = arrsort[Math.floor(length/2)] 
+//     console.log(result)
+// }
+
+// else{
+//     var result= Math.floor((arrsort[length/2]+arrsort[length/2 -1])/2)
+//     console.log(result)
+// }
+// })([2,3,57,6],[34,56,78])
+
+
+    </script>
+</body>
+</html>
